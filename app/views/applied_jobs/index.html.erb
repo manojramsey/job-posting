@@ -1,0 +1,23 @@
+<h1>AppliedJobs#index</h1>
+<p>Find me in app/views/applied_jobs/index.html.erb</p>
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Job Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <% @applied_jobs.each do |x| %>
+        <%= x.user_id %>
+        <% end %>
+
+      <td></td>
+
+      </tr>
+
+  </tbody>
+</table>

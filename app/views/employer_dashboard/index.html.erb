@@ -1,0 +1,19 @@
+<h1>EmployerDashboard</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Applicant Name</th>
+      <th>Post Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applicants.each do |applicant| %>
+      <tr>
+
+        <td><%= applicant.user.name %></td>
+        <td><%= applicant.post.body %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
